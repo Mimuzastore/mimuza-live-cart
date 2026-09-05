@@ -1,0 +1,30 @@
+MIMUZA LIVE CART — PASSOS SEGUINTES
+
+1) DESCOMPRIMIR ESTE ZIP NO MAC.
+2) NO GITHUB, NA PÁGINA "UPLOAD FILES":
+   - Arrastar TODO o conteúdo da pasta mimuza-live-cart para a zona de upload.
+   - Confirmar "Valider les modifications".
+   - Não carregar apenas o ZIP.
+
+3) VOLTAR À VERCEL:
+   - Importar o repositório mimuza-live-cart.
+   - Framework deverá ser reconhecido como Next.js.
+   - Antes/depois do deploy, abrir Settings > Environment Variables e criar:
+       SHOPIFY_SHOP
+       SHOPIFY_CLIENT_ID
+       SHOPIFY_CLIENT_SECRET
+       ADMIN_PASSWORD
+
+4) SHOPIFY DEV DASHBOARD:
+   - Na app "Mimuza LIVE Cart", criar/publicar uma versão com os scopes:
+       read_draft_orders
+       write_draft_orders
+   - Instalar a app na loja ou aprovar a atualização de permissões.
+   - Em Settings da app, copiar Client ID e Client secret.
+   - NÃO enviar o Client secret por fotografia/chat.
+
+5) Depois do deploy:
+   - Cliente: https://SEU-PROJETO.vercel.app/
+   - Painel privado: https://SEU-PROJETO.vercel.app/admin
+
+6) Quando estiver tudo testado, ligar ao domínio da loja / App Proxy.

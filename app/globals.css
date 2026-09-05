@@ -1,0 +1,42 @@
+:root{
+  --bg:#f7f2ea;
+  --card:#ffffff;
+  --ink:#171717;
+  --muted:#7d7469;
+  --gold:#c9a64f;
+  --gold2:#ae8632;
+  --line:#eadfc9;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:48px 18px 80px}
+.brand{text-align:center;margin-bottom:26px}
+.logoMark{font-family:Georgia,serif;font-size:18px;letter-spacing:4px;color:var(--gold2);margin-bottom:5px}
+.brand h1{font-family:Georgia,serif;font-weight:500;letter-spacing:5px;margin:0;color:var(--gold2)}
+.brand small{letter-spacing:3px;color:#ad9e86}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 40px rgba(79,59,23,.08);margin-top:18px}
+h2{font-size:30px;margin:8px 0 6px}
+.subtitle{color:var(--muted);line-height:1.55;margin:0 0 22px}
+label{display:block;font-size:13px;font-weight:700;margin:16px 0 7px}
+input{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:15px 16px;font-size:16px;outline:none;background:#fff}
+input:focus{border-color:var(--gold)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button,.button{width:100%;border:0;border-radius:14px;padding:15px 18px;background:linear-gradient(90deg,var(--gold),var(--gold2));color:white;font-size:16px;font-weight:800;cursor:pointer;text-decoration:none;text-align:center;display:block;margin-top:18px}
+button:disabled{opacity:.55;cursor:not-allowed}
+.secondary{background:#1d1d1d}
+.message{margin-top:16px;border-radius:12px;padding:12px 14px;background:#f3eee5;color:#584f43}
+.error{background:#fff0f0;color:#a12626;border:1px solid #f1caca}
+.success{background:#edf8ef;color:#246530;border:1px solid #c9e8ce}
+.item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid #eee6d8}
+.item:last-child{border-bottom:0}
+.itemName{font-weight:800}
+.itemMeta{font-size:13px;color:var(--muted);margin-top:4px}
+.price{font-weight:800;white-space:nowrap}
+.total{display:flex;justify-content:space-between;font-size:22px;font-weight:900;padding-top:20px}
+.badge{display:inline-block;background:#111;color:#fff;border-radius:8px;padding:5px 8px;font-size:12px;vertical-align:middle}
+.adminTop{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.adminTop a{font-size:13px;color:var(--gold2)}
+.help{font-size:12px;color:var(--muted);margin-top:6px}
+footer{text-align:center;color:#aa9f90;font-size:12px;margin-top:26px}
+@media(max-width:560px){.row{grid-template-columns:1fr}.wrap{padding-top:24px}h2{font-size:25px}.card{padding:18px}}
